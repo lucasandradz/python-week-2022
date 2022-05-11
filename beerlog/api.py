@@ -24,6 +24,10 @@ async def add(beer_in: BeerIn):
     """Adds a new beer to the database"""
 
     beer = add_beer(
-        beer_in.name, beer_in.style, beer_in.flavor, beer_in.image, beer_in.cost
+        beer_in.name,
+        beer_in.style,
+        beer_in.flavor,
+        beer_in.image,
+        beer_in.cost,
     )
     return beer

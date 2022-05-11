@@ -24,7 +24,16 @@ def build_console_table(beers: List[Beer]):
     """Constructing table just to look good in console."""
 
     table = Table(title="Beers")
-    headers = ["id", "name", "style", "flavor", "image", "cost", "score", "date"]
+    headers = [
+        "id",
+        "name",
+        "style",
+        "flavor",
+        "image",
+        "cost",
+        "score",
+        "date",
+    ]
 
     for header in headers:
         table.add_column(header, style="magenta")
