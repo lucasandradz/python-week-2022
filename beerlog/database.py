@@ -13,6 +13,7 @@ warnings.filterwarnings("ignore", category=SAWarning)
 SelectOfScalar.inherit_cache = True
 Select.inherit_cache = True
 
+
 # Creating database engine
 engine = create_engine(settings.database.url)
 
