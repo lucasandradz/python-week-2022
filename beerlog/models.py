@@ -19,7 +19,8 @@ class Beer(SQLModel, table=True):
     date: datetime = Field(default_factory=datetime.now)
 
     # cls = class, v = value
-    # field should be named exactly "field", see https://pydantic-docs.helpmanual.io/usage/validators/.
+    # field should be named exactly "field".
+    # See https://pydantic-docs.helpmanual.io/usage/validators/.
     @validator("flavor", "image", "cost")
     def validate_ratings(cls, v, field):
         # print("validate_ratings")
@@ -33,7 +34,8 @@ class Beer(SQLModel, table=True):
         return v
 
     # cls = class, v = value
-    # values should be named exactly "values", see https://pydantic-docs.helpmanual.io/usage/validators/.
+    # values should be named exactly "values".
+    # See https://pydantic-docs.helpmanual.io/usage/validators/.
     @validator("score", always=True)
     def calculate_score(cls, v, values):
         # print("calculate_score")
