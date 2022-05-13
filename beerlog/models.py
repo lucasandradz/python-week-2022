@@ -46,10 +46,3 @@ class Beer(SQLModel, table=True):
 
         score = mean([values["flavor"], values["image"], values["cost"]])
         return int(score)
-
-
-# try:
-#     brewdog = Beer(name="Brewdog", style="NEIPA", flavor=5, image=8, cost=8)
-#     print(brewdog)
-# except RuntimeError:
-#     print("Erro maluco!")
