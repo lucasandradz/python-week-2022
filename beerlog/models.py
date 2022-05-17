@@ -1,4 +1,5 @@
-# Testar classe de forma interativa: python -i beerlog/models.py
+# Run file interactively:
+# python -i beerlog/models.py
 
 from datetime import datetime
 from statistics import mean

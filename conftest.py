@@ -1,3 +1,6 @@
+# File used to configure setup for tests using pytest. To run tests, use IDE integration or command:
+#  pytest -v
+
 from unittest.mock import patch
 
 import pytest

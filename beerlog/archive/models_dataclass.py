@@ -3,8 +3,8 @@
 from dataclasses import dataclass
 
 
-# dataclass decorator is like @Data from java/lombok; it adds a default constructor (or __init__
-# method), among other things.
+# dataclass decorator is like @Data from java/lombok; it adds a default constructor (or
+# __init__ method), among other things.
 @dataclass
 class Beer:
     name: str
