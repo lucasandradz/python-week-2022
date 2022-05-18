@@ -1,4 +1,6 @@
 name: CI
+permissions: write-all
+
 on:
   push:
     branches:
